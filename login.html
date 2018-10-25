@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<!--<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=GB18030">
+-->
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<style type="text/css">
+body {
+    width: 694px;
+    margin: auto;
+   background: white; 
+}
+
+.top,.bottom,.center {
+    height: auto;
+    width: 100%;
+    clear: both;
+}
+
+#left {
+    width: 20%;
+    float: left;
+    padding: 0 10px;
+     height: auto;
+}
+
+#right {
+    width: 55%;
+    float: right;
+    height: auto;
+    padding-top: 30px;
+}
+
+.line {
+    height: 300px;
+    border-color: green;
+    border-left-style: solid;
+    border-width: 2px;
+}
+
+.img1 {
+    width: 44px;
+    height: 300px;
+    float: left;
+}
+
+.img2 {
+    width: 44px;
+    height: 300px;
+    float: right;
+}
+table{
+	background-color: bisque;
+	
+	
+}
+ ul,li.daohang{
+	display: inline;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	
+}
+a.asd{
+	float: left;
+	width: 7em;
+	text-decoration: none;
+	color: white;
+	background-color:pink ;
+	padding: 0.2em 0.6em;
+	border: 19px solid white;
+	text-align: center;
+}
+a:hover{
+	background-color: plum;
+	font-family: "微软雅黑";
+}
+
+</style>
+<script language="JavaScript">
+        function submitOnclick(){
+        var form1=document.getElementById('form1');
+        //用户名格式验证
+        if(form1.text1.value==""){
+            alert("用户名不能为空");
+            return false;
+        }
+        if(form1.text1.value.length<3 || form1.text1.value.length>20){
+            alert("用户名不能少于3个字符，不能超过20个字符");
+            return false;
+        }
+        //密码格式验证
+        if(form1.pwd1.value==""){
+            alert("密码不能为空");
+            return false;
+        }
+        if(form1.pwd1.value.length<6 || form1.pwd1.value.length>20){
+            alert("密码不能少于6个字符，不能超过20个字符");
+            return false;
+        }
+        // 第二次输入密码一致性验证
+        if(form1.pwd1.value != form1.pwd2.value){
+            alert("两次输入密码不一样，请重新输入！")
+            return false;
+        }
+        //性别判断
+        if(form1.gender.value != "male" && form1.gender.value != "female"){
+            alert("请选择性别！")
+            return false;
+        }
+     
+            return true;
+     }
+</script>
+</head>
+
+
+
+<body>
+    <!-- 顶部盒子 -->
+    <img class="top" src="img/dfms-1.jpg" style=" height:250px;">
+    <ul>
+    	<li class="daohang"><a class="asd" href="#">手机号注册</a></li>
+    	<li class="daohang"><a  class="asd" href="#">邮箱注册</a></li>
+    	<li class="daohang"><a  class="asd" href="#">QQ号注册</a></li>
+    	<li class="daohang"><a class="asd" href="#">用户命注册</a></li>
+    	
+    </ul>   
+    <!-- 中间的盒子 -->
+    <div class="center">
+        <img src="img/u=2748183030,253119150&fm=27&gp=0.jpg" class="img1">
+        <div id="left">
+            <b>注册须知：</b>
+            <ul>
+                <li>用户名：为用户登录网站的通行证，长度3-20个字符。</li>
+                <li>密码：请设定在6-20位间。</li>
+                <li>确认密码：确认密码必须与密码一致。</li>
+                <li>Email：请填写有效的Email地址，以便于与您联系。</li>
+            </ul>
+        </div>
+ <img src="img/u=2748183030,253119150&fm=27&gp=0.jpg" class="img2">
+      
+        <div id="right">
+ 
+        	
+            <form id="form1" action="index1.html">
+                <table>
+                    <tr>
+                        <td>用户名：</td>
+                        <td><input name="text1" type="text"
+                            placeholder="长度控制在3-20个字符">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>密码：</td>
+                        <td><input type="password" name="pwd1"
+                            placeholder="请设定在6-20位之间">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>确认密码：</td>
+                        <td><input type="password" name="pwd2" size="20" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>性别：</td>
+                        <td><input type="radio" name="gender" value="male" />男 <input
+                            type="radio" name="gender" value="female" />女</td>
+                    </tr>
+                    <tr>
+                        <td>E-mail：</td>
+                        <td><input type="email" name="email" size="30" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input name="text3" value="提交" type="submit"style="background-color:burlywood ;"
+                            onclick="return submitOnclick()">
+                        </td>
+                        <td><input type="reset" value="重置" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <!-- 竖线的实现 -->
+        <table class="line">
+            <tr>
+                <td valign="top"></td>
+            </tr>
+        </table>
+
+    </div>
+    <!-- 底部盒子 -->
+    <img class="bottom" src="">
+</body>
+</html>

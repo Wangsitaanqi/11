@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>酒店宾馆</title>
+  <<link rel="stylesheet" href="css/style.css" />
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+	<header>
+			<nav id="top_links">
+				<div class="nav_main">
+					<div class="contact_info">
+						<ul>
+							<li>
+								<a href="">联系我们</a>
+							</li>
+							<li>|</li>
+							<li>
+								<a href="">站点帮助</a>
+							</li>
+							<li>|</li>
+							<li>
+								<a href="">问题反馈</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		<nav class="nav_main">
+				<div id="banner"></div>
+				<div id="nav_menu">
+					<a href="index1.html">首页</a>
+					<a href=""  style="background-color:orange ;">酒店宾馆</a>
+					
+					<a href="toplan/ninzufengqing.html">民族风情</a>
+					<a href="toplan/tesemeishi.html">特色美食</a>
+					<a href="toplan/techangoumai.html">特产购买</a>
+					<a href="toplan/youhui.html" >订单管理</a>
+				</div>
+			</nav>
+			</header>
+  <!-- main wrapper -->
+  <div class="wrapper">
+   
+      <section class="bg-parallax parallax-window">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="parallax-text">
+                <h2 class="parallax_t __white">吃好、喝好、住的好</h2>
+                <h2 class="parallax_t __green">您开心就好</h2>
+               
+              </div>
+            </div>
+            <!-- planner-->
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 planner">
+              <div class="planner-block">
+                <form class="form-planner form-horizontal">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="form-group">
+                        <label>入住日期</label>
+                        <input class="form-control __plannerInput" id="datetimepicker1" type="text" placeholder="2018-08-17">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="form-group">
+                        <label>离店日期</label>
+                        <input class="form-control __plannerInput" id="datetimepicker2" type="text" placeholder="2018-08-20">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <div class="form-group">
+                          <label>房型</label>
+                          <div class="theme-select">
+                            <select class="form-control __plannerSelect">
+                              <option value="">标准间</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                      <div class="form-group">
+                          <label>成年人</label>
+                          <div class="theme-select">
+                            <select class="form-control __plannerSelect">
+                              <option value="">1</option>
+                              <option value="">2</option>
+                              <option value="">3</option>
+                              <option value="">4</option>
+                              <option value="">5</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                      <div class="form-group">
+                          <label>孩子</label>
+                          <div class="theme-select">
+                            <select class="form-control __plannerSelect">
+                              <option value="">1</option>
+                              <option value="">2</option>
+                              <option value="">3</option>
+                              <option value="">4</option>
+                              <option value="">5</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div class="form-group">
+                          <label>联系电话</label>
+                          <input type="tel" class="form-control">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <div class="form-group">
+                          <label>价格范围</label>
+                          <div id="slider-range"></div>
+                          <div id="amount"><span id="amount1"></span><span id="amount2"></span></div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <div class="planner-check-availability">
+                        <a href="best-rooms-detail.html" class="btn btn-default">提交</a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- /planner-->
+          </div>
+        </div>
+    </section>
+    <!-- /parallax -->
+    <!-- chose best rooms -->
+    <section class="best-room">
+      <div class="container">
+        <div class="title-main">
+          <h2 class="h2">最佳推荐<span class="title-secondary">不容错过</span></h2>
+        </div>
+        <div class="best-room-carousel">
+          <ul class="row best-room_ul">
+            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 best-room_li">
+              <div class="best-room_img">
+                <a href="#"><img src="assets/images/best-rooms/1.jpg" alt=""></a>
+                <div class="best-room_overlay">
+                  <div class="overlay_icn"><a href="best-rooms-detail.html"></a></div>
+                </div>
+              </div>
+              <div class="best-room-info">
+                <div class="best-room_t"><a href="best-rooms-detail.html">九天国际</a></div>
+                <div class="best-room_desc">
+                </div>
+                <div class="best-room_price">
+                  <span>599</span> / 一天
+                </div>
+              </div>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 best-room_li">
+              <div class="best-room_img">
+                <a href="#"><img src="assets/images/best-rooms/5.jpg" alt=""></a>
+                <div class="best-room_overlay">
+                  <div class="overlay_icn"><a href="best-rooms-detail.html"></a></div>
+                </div>
+              </div>
+              <div class="best-room-info">
+                <div class="best-room_t"><a href="best-rooms-detail.html">天王国际</a></div>
+                <div class="best-room_desc">
+                </div>
+                <div class="best-room_price">
+                  <span>729</span> / 一天
+                </div>
+              </div>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 best-room_li">
+              <div class="best-room_img">
+                <a href="#"><img src="assets/images/best-rooms/3.jpg" alt=""></a>
+                <div class="best-room_overlay">
+                  <div class="overlay_icn"><a href="best-rooms-detail.html"></a></div>
+                </div>
+              </div>
+              <div class="best-room-info">
+                <div class="best-room_t"><a href="best-rooms-detail.html">金狮-皇冠酒店</a></div>
+                <div class="best-room_desc">金狮 皇冠酒店事赤峰市 性价比 比较高的一家酒店 位于赤峰市红山区钢铁西街与海关胡同交叉口
+                </div>
+                <div class="best-room_price">
+                  <span>249</span> / 一天
+                </div>
+              </div>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 best-room_li">
+              <div class="best-room_img">
+                <a href="#"><img src="assets/images/best-rooms/8.jpg" alt=""></a>
+                <div class="best-room_overlay">
+                  <div class="overlay_icn"><a href="best-rooms-detail.html"></a></div>
+                </div>
+              </div>
+              <div class="best-room-info">
+                <div class="best-room_t"><a href="best-rooms-detail.html">塔林格尔</a></div>
+                <div class="best-room_desc">塔林格尔是一家蒙古特色酒店
+                <div class="best-room_price">
+                  <span>249</span> /一天
+                </div>
+              </div>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 best-room_li">
+              <div class="best-room_img">
+                <a href="#"><img src="assets/images/best-rooms/3..jpg" alt=""></a>
+                <div class="best-room_overlay">
+                  <div class="overlay_icn"><a href="best-rooms-detail.html"></a></div>
+                </div>
+              </div>
+              <div class="best-room-info">
+                <div class="best-room_t"><a href="best-rooms-detail.html">蒙古大营</a></div>
+                <div class="best-room_desc">蒙古大营是一家蒙古特色酒店，位于乌兰布统景区
+                </div>
+                <div class="best-room_price">
+                  <span>799</span> / 一天
+                </div>
+              </div>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 best-room_li">
+              <div class="best-room_img">
+                <a href="#"><img src="assets/images/best-rooms/4.jpg" alt=""></a>
+                <div class="best-room_overlay">
+                  <div class="overlay_icn"><a href="best-rooms-detail.html"></a></div>
+                </div>
+              </div>
+              <div class="best-room-info">
+                <div class="best-room_t"><a href="best-rooms-detail.html">娜仁格日乐</a></div>
+                <div class="best-room_desc">相当于蒙古族的民宿
+                </div>
+                <div class="best-room_price">
+                  <span>199</span> / 一天
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+   
+
+    <!-- /choose best rooms -->
+   
+  <!-- /footer -->
+  <!-- Scripts -->
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/tether.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="assets/js/moment.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.smartmenus.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.parallax.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.shuffle.min.js"></script>
+  <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+  <!---<script type="text/javascript" src="http://ditu.google.cn/maps/api/js"></script>--->
+  <script type="text/javascript" src="assets/js/map.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <!-- /Scripts -->
+</body>
+</html>
